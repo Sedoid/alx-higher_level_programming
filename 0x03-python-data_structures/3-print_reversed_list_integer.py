@@ -1,7 +1,8 @@
 #!/usr/bin/pythony3
 def print_reversed_list_integer(my_list=[]):
-    length = len(my_first) - 1
-    reverse = []
-
-    for i in range(0,len(my_list)):
-        print("{:d}").format(my_list[length-i]))
+    if not my_list:
+        pass
+    else:
+        my_list.reverse()
+        for i in range(len(my_list)):
+            print("{:d}".format(my_list[i]))
